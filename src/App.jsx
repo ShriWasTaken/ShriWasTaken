@@ -7,7 +7,7 @@ import {Route} from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import {Routes,BrowserRouter as Router} from "react-router-dom";
-
+import Blog from "./Blog";
 
 const App = () => {
     return(
@@ -19,6 +19,7 @@ const App = () => {
                         <Route path="/" element={<Home/>}/>
                         <Route exact path="/contact/" element = {<Contact/>}/>
                         <Route exact path="/projects/" element = { <Projects/>}/>
+                        <Route exact path="/blog/" element = {<Blog/>}/>
                     </Routes>
                 </Router>
         </>
